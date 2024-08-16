@@ -1,4 +1,5 @@
 'use client';
+
 import { useState } from 'react';
 import logo from '../assets/images/logo-white.png';
 import Image from 'next/image';
@@ -95,7 +96,7 @@ const Navbar = () => {
           {!isLoggedIn && (
             <div className='hidden md:block md:ml-6'>
               <div className='flex items-center'>
-                <button className='flex items-center text-amber-950 bg-amber-400 hover:bg-amber-950 hover:text-white rounded-md px-3 py-2 duration-200 font-bold'>
+                <button className='flex items-center text-amber-950 bg-amber-300 hover:bg-amber-950 hover:text-white rounded-md px-3 py-2 duration-200 font-bold'>
                   <FcGoogle className='mr-2 text-xl' />
                   <span>Login or Register</span>
                 </button>

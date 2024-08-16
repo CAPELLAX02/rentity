@@ -64,7 +64,7 @@ const Navbar = () => {
                   href='/'
                   className={`${
                     pathname === '/'
-                      ? 'bg-white text-amber-800 hover:text-white'
+                      ? 'bg-white hover:text-white fucking-navbar-link'
                       : ''
                   } text-white hover:bg-amber-950 duration-200 rounded-md px-3 py-2 font-semibold my-auto`}
                 >
@@ -74,7 +74,7 @@ const Navbar = () => {
                   href='/properties'
                   className={`${
                     pathname === '/properties'
-                      ? 'bg-white text-amber-800 hover:text-white'
+                      ? 'bg-white hover:text-white fucking-navbar-link'
                       : ''
                   } text-white hover:bg-amber-950 duration-200 rounded-md px-3 py-2 font-semibold my-auto`}
                 >
@@ -85,7 +85,7 @@ const Navbar = () => {
                     href='/properties/add'
                     className={`${
                       pathname === '/properties/add'
-                        ? 'bg-white text-amber-800 hover:text-white'
+                        ? 'bg-white hover:text-white fucking-navbar-link'
                         : ''
                     } text-white hover:bg-amber-950 duration-200 rounded-md px-3 py-2 font-semibold my-auto`}
                   >

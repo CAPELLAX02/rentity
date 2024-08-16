@@ -6,3 +6,11 @@
   background-color: rgb(69 26 3);
   color: rgb(254 243 199);
 }
+
+.fucking-navbar-link {
+  color: black !important;
+}
+
+.fucking-navbar-link:hover {
+  color: white !important;
+}

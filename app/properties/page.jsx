@@ -1,6 +1,10 @@
 import properties from '@/properties.json';
 import PropertyCard from '@/components/PropertyCard';
 
+/**
+ * There will be a filtering component here.
+ */
+
 const PropertiesPage = () => {
   return (
     <section className='px-4 py-6'>

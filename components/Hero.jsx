@@ -46,7 +46,7 @@ const Hero = () => {
           </div>
           <button
             type='submit'
-            className='md:ml-4 mt-4 md:mt-0 w-full md:w-auto px-6 py-3 rounded-lg bg-amber-800 text-white hover:bg-amber-950 duration-200 focus:outline-none focus:ring focus:ring-amber-500'
+            className='md:ml-4 mt-4 md:mt-0 w-full md:w-auto px-6 py-3 rounded-lg bg-blue-600 text-white hover:bg-blue-700 duration-200 focus:outline-none focus:ring focus:ring-amber-500 font-semibold'
           >
             Search
           </button>

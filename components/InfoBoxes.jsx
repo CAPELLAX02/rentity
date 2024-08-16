@@ -11,6 +11,7 @@ const InfoBoxes = () => {
             buttonText='Browse Properties'
             bg='bg-blue-100'
             buttonBg='bg-blue-600'
+            href='/properties'
           />
           <InfoBox
             title='For Property Owners'
@@ -18,6 +19,7 @@ const InfoBoxes = () => {
             buttonText='Add Property'
             bg='bg-amber-100'
             buttonBg='bg-amber-600'
+            href='/properties/add'
           />
         </div>
       </div>

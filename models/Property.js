@@ -1,10 +1,10 @@
 import { Schema, model, models } from 'mongoose';
 
-const propertySchema = new Schema(
+const PropertySchema = new Schema(
   {
     owner: {
       type: Schema.Types.ObjectId,
-      ref: 'userModel',
+      ref: 'User',
       required: true,
     },
     name: {
@@ -19,10 +19,18 @@ const propertySchema = new Schema(
       type: String,
     },
     location: {
-      street: String,
-      city: String,
-      state: String,
-      zipCode: String,
+      street: {
+        type: String,
+      },
+      city: {
+        type: String,
+      },
+      state: {
+        type: String,
+      },
+      zipcode: {
+        type: String,
+      },
     },
     beds: {
       type: Number,
@@ -42,29 +50,42 @@ const propertySchema = new Schema(
       },
     ],
     rates: {
-      nightly: Number,
-      weekly: Number,
-      monthly: Number,
+      nightly: {
+        type: Number,
+      },
+      weekly: {
+        type: Number,
+      },
+      monthly: {
+        type: Number,
+      },
     },
     seller_info: {
-      name: String,
-      email: String,
-      phone: String,
+      name: {
+        type: String,
+      },
+      email: {
+        type: String,
+      },
+      phone: {
+        type: String,
+      },
     },
     images: [
       {
         type: String,
       },
     ],
-    is_feautured: {
+    is_featured: {
       type: Boolean,
       default: false,
     },
   },
-  { timestamps: true }
+  {
+    timestamps: true,
+  }
 );
 
-const propertyModel =
-  models.propertyModel || model('propertyModel', propertySchema);
+const Property = models.Property || model('Property', PropertySchema);
 
-export default propertyModel;
+export default Property;

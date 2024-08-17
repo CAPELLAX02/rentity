@@ -340,7 +340,7 @@ const AddPropertyForm = () => {
         <input
           type='text'
           id='seller_name'
-          name='seller_info.name.'
+          name='seller_info.name'
           className='border rounded w-full py-2 px-3'
           placeholder='Name'
         />
@@ -394,7 +394,7 @@ const AddPropertyForm = () => {
 
       <div>
         <button
-          className='bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline'
+          className='bg-blue-500 hover:bg-amber-500 text-white font-bold py-2 px-4 rounded w-full focus:outline-none focus:shadow-outline duration-200 mt-5'
           type='submit'
         >
           Add Property

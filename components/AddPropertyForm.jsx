@@ -1,16 +1,16 @@
 'use client';
 
-import { addProperty } from '@/app/actions/addProperty';
 import { useState } from 'react';
+import { addProperty } from '@/app/actions/addProperty';
 
 const AddPropertyForm = () => {
   const [isLoading, setIsLoading] = useState(false);
 
-  const handleSubmit = async (event) => {
-    event.preventDefault();
+  const handleSubmit = async (e) => {
+    e.preventDefault();
     setIsLoading(true);
 
-    const formData = new FormData(event.target);
+    const formData = new FormData(e.target);
 
     try {
       await addProperty(formData);

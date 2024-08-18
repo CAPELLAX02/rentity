@@ -1,9 +1,34 @@
-import React from 'react';
+'use client';
+
+import { useState } from 'react';
+import { editProperty } from '@/app/actions/editProperty';
+import { toast } from 'react-toastify';
 
 const EditPropertyForm = ({ property }) => {
+  const [isLoading, setIsLoading] = useState(false);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsLoading(true);
+
+    const formData = new FormData(e.target);
+
+    try {
+      await editProperty(property._id, formData);
+
+      toast.success('Property Updated Successfully.', {
+        theme: 'colored',
+      });
+    } catch (error) {
+      console.error('Error editing property:', error);
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
   return (
     // <form action={addProperty} onSubmit={handleSubmit}>
-    <form>
+    <form action={editProperty} onSubmit={handleSubmit}>
       <h2 className='text-3xl text-center font-semibold mb-6'>Add Property</h2>
 
       <div className='mb-4'>
@@ -411,7 +436,7 @@ const EditPropertyForm = ({ property }) => {
         />
       </div>
 
-      <div className='mb-4'>
+      {/* <div className='mb-4'>
         <label htmlFor='images' className='block text-gray-700 font-bold mb-2'>
           Images (Select up to 4 images)
         </label>
@@ -424,7 +449,7 @@ const EditPropertyForm = ({ property }) => {
           multiple
           required
         />
-      </div>
+      </div> */}
 
       <div>
         <button

@@ -16,7 +16,7 @@ const page = async () => {
   const { userId } = sessionUser;
 
   if (!userId) {
-    throw new Error('User ID is required and not found.');
+    throw new Error('User ID is required, yet not found.');
   }
 
   const propertiesDocs = await Property.find({ owner: userId }).lean();

@@ -5,11 +5,30 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { FaEdit, FaTrashAlt } from 'react-icons/fa';
 import { useRouter } from 'next/navigation';
+import { toast } from 'react-toastify';
+
+import { deleteProperty } from '@/app/actions/deleteProperty';
 
 const ProfileProperties = ({ properties: initialProperties }) => {
   const [properties, setProperties] = useState(initialProperties);
 
   const router = useRouter();
+
+  const handleDeleteProperty = async (propertyId) => {
+    if (window.confirm('Are you sure you want to delete this property?')) {
+      await deleteProperty(propertyId);
+
+      const updatedProperties = properties.filter(
+        (property) => property._id !== propertyId
+      );
+
+      setProperties(updatedProperties);
+
+      toast.success('Property Deleted Successfully.', {
+        theme: 'colored',
+      });
+    }
+  };
 
   return properties.map((property) => {
     return (
@@ -50,6 +69,7 @@ const ProfileProperties = ({ properties: initialProperties }) => {
           <button
             className='text-red-600 rounded-md mr-2 bg-red-100 hover:bg-red-200 duration-200'
             type='button'
+            onClick={() => handleDeleteProperty(property._id)}
           >
             <div className='flex gap-2 px-3 py-2'>
               <FaTrashAlt className='my-auto' />

@@ -14,7 +14,7 @@ export const addProperty = async (formData) => {
   const sessionUser = await getSessionUser();
 
   if (!sessionUser || !sessionUser.userId) {
-    throw new Error('User ID is required.');
+    throw new Error('User ID is required, yet not found.');
   }
 
   const { userId } = sessionUser;

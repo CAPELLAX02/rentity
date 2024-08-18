@@ -53,7 +53,7 @@ const ProfileProperties = ({ properties: initialProperties }) => {
           <button
             className='text-blue-700 rounded-md mr-2 bg-blue-100 hover:bg-blue-200 duration-200'
             type='button'
-            onClick={() => router.push('/properties')}
+            onClick={() => router.push(`/properties/${property._id}/edit`)}
           >
             <div className='flex gap-2 px-3 py-2'>
               <FaEdit className='my-auto' />

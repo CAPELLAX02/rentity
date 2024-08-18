@@ -6,6 +6,7 @@ import connectDB from '@/config/database';
 import Property from '@/models/Property';
 import { getSessionUser } from '@/utils/getSessionUser';
 import Link from 'next/link';
+import { convertToSerializableObject } from '@/utils/convertToObjects';
 
 const page = async () => {
   await connectDB();
@@ -18,7 +19,9 @@ const page = async () => {
     throw new Error('User ID is required and not found.');
   }
 
-  const properties = await Property.find({ owner: userId });
+  const propertiesDocs = await Property.find({ owner: userId }).lean();
+
+  const properties = propertiesDocs.map(convertToSerializableObject);
 
   return (
     <section className='bg-blue-50'>

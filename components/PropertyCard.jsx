@@ -23,7 +23,7 @@ export const PropertyCard = ({ property }) => {
   return (
     <div className='rounded-xl shadow-md relative hover:shadow-xl duration-200'>
       <Image
-        src={`/images/properties/${property.images[0]}`}
+        src={property.images[0]}
         alt=''
         height={0}
         width={0}

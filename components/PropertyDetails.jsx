@@ -90,9 +90,10 @@ const PropertyDetails = ({ property }) => {
           ))}
         </ul>
       </div>
-      <div className='bg-white p-6 rounded-lg shadow-md mt-6'>
+      {/* Google Geocoding API - not certain if it is free to implement */}
+      {/* <div className='bg-white p-6 rounded-lg shadow-md mt-6'>
         <PropertyMap property={property} />
-      </div>
+      </div> */}
     </main>
   );
 };

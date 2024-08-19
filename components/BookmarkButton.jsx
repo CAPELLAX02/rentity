@@ -81,7 +81,7 @@ const BookmarkButton = ({ property }) => {
       className={`${
         isBookmarked
           ? 'bg-transparent hover:bg-pink-600 text-pink-600 hover:text-white border-pink-500 hover:border-pink-600'
-          : 'bg-blue-500 hover:bg-blue-600 text-white border-blue-500 hover:border-blue-600'
+          : 'bg-emerald-500 hover:bg-emerald-600 text-white border-emerald-500 hover:border-emerald-600'
       } font-bold w-full py-2 px-4 rounded-md flex items-center justify-center duration-200 border-2`}
       onClick={handleClick}
       disabled={isLoading}

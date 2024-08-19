@@ -13,7 +13,7 @@ const PropertyContactForm = ({ property }) => {
             Name:
           </label>
           <input
-            className='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline'
+            className='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline text-sm'
             id='name'
             name='name'
             type='text'
@@ -29,7 +29,7 @@ const PropertyContactForm = ({ property }) => {
             Email:
           </label>
           <input
-            className='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline'
+            className='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline text-sm'
             id='email'
             name='email'
             type='email'
@@ -45,7 +45,7 @@ const PropertyContactForm = ({ property }) => {
             Phone:
           </label>
           <input
-            className='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline'
+            className='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline text-sm'
             id='phone'
             name='phone'
             type='text'
@@ -60,7 +60,7 @@ const PropertyContactForm = ({ property }) => {
             Message:
           </label>
           <textarea
-            className='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 h-44 focus:outline-none focus:shadow-outline'
+            className='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 h-44 focus:outline-none focus:shadow-outline text-sm'
             id='message'
             name='message'
             placeholder='Enter your message'

@@ -37,7 +37,7 @@ const SearchResultsPage = async ({
 
   return (
     <>
-      <section className='bg-amber-500 py-6'>
+      <section className='bg-amber-500 py-5'>
         <div className='max-w-7xl mx-auto px-4 flex flex-col items-start sm:px-6 lg:px-8'>
           <PropertySearchForm />
         </div>

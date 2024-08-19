@@ -40,7 +40,7 @@ const Footer = () => {
           </div>
 
           {/* Quick Links */}
-          <div className='ms-24'>
+          <div>
             <h4 className='text-amber-400 font-bold text-lg mb-3'>
               Quick Links
             </h4>

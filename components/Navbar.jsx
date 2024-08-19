@@ -241,7 +241,7 @@ const Navbar = () => {
               href='/'
               className={`${
                 pathname === '/' ? 'bg-amber-400 text-amber-950' : ''
-              } text-center block rounded-md px-3 py-2 text-base font-medium hover:bg-amber-700 hover:text-white duration-200`}
+              }text-white text-center block rounded-md px-3 py-2 text-base font-medium hover:bg-amber-500 hover:text-white duration-200`}
             >
               Home
             </Link>
@@ -249,7 +249,7 @@ const Navbar = () => {
               href='/properties'
               className={`${
                 pathname === '/properties' ? 'bg-amber-400 text-amber-950' : ''
-              } text-center block rounded-md px-3 py-2 text-base font-medium hover:bg-amber-700 hover:text-white duration-200`}
+              }text-white text-center block rounded-md px-3 py-2 text-base font-medium hover:bg-amber-500 hover:text-white duration-200`}
             >
               Properties
             </Link>
@@ -260,7 +260,7 @@ const Navbar = () => {
                   pathname === '/properties/add'
                     ? 'bg-amber-400 text-amber-950'
                     : ''
-                } text-center block rounded-md px-3 py-2 text-base font-medium hover:bg-amber-700 hover:text-white duration-200`}
+                }text-white text-center block rounded-md px-3 py-2 text-base font-medium hover:bg-amber-500 hover:text-white duration-200`}
               >
                 Add Property
               </Link>

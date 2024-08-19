@@ -36,7 +36,7 @@ export const PropertyCard = ({ property }) => {
           <div className='text-gray-600'>{property.type}</div>
           <h3 className='text-xl font-bold'>{property.name}</h3>
         </div>
-        <h3 className='absolute top-[10px] right-[10px] bg-white px-4 py-2 rounded-lg text-amber-600 font-bold text-right md:text-center lg:text-right'>
+        <h3 className='absolute top-[10px] right-[10px] bg-white px-4 py-2 rounded-lg text-emerald-600 font-bold text-right md:text-center lg:text-right'>
           {getRateDisplay()}
         </h3>
 

@@ -1,6 +1,8 @@
 const InfoBox = ({ title, text, buttonBg, buttonText, bg, href }) => {
   return (
-    <div className={`${bg} p-6 rounded-lg shadow-md`}>
+    <div
+      className={`${bg} p-6 rounded-lg shadow-md hover:shadow-lg duration-300`}
+    >
       <h2 className='text-2xl font-bold'>{title}</h2>
       <p className='mt-2 mb-4'>{text}</p>
       <a

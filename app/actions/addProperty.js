@@ -41,7 +41,7 @@ export const addProperty = async (formData) => {
     rates: {
       nightly: formData.get('rates.nightly'),
       weekly: formData.get('rates.weekly'),
-      monthly: formData.get('rates.nightly'),
+      monthly: formData.get('rates.monthly'),
     },
     seller_info: {
       name: formData.get('seller_info.name'),

@@ -26,6 +26,14 @@ const MessageCard = ({ message }) => {
           {new Date(message.createdAt).toLocaleString().split(' ')[0]} -{' '}
           {new Date(message.createdAt).toLocaleString().split(' ')[1]}
         </li>
+        <ul>
+          <button className="mt-4 mr-3 bg-blue-500 text-white py-1 px-3 rounded-md">
+            Marked as Read
+          </button>
+          <button className="mt-4 mr-3 bg-red-500 text-white py-1 px-3 rounded-md">
+            Delete Message
+          </button>
+        </ul>
       </ul>
     </div>
   );

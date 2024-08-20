@@ -1,36 +1,120 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Rentity
+
+> A web application to help you find your next rental property.
+
+Rentity is a comprehensive platform that allows users to find and manage rental properties with ease. This project is built using Next.js 14 and offers a wide range of features, including user authentication, property management, and more.
+
+## Features
+
+Rentity offers the following features:
+
+- User authentication with Google & Next Auth
+- Route protection
+- User profile with user listings
+- Multiple property image upload via cloudinary
+- Property search functionality
+- Internal messages with 'unread' notifications
+- Photoswipe image gallery
+- Toast notifications
+- Property bookmarking / saved properties
+- Property sharing to social media
+- Loading spinners
+- Responsive design (Tailwind CSS)
+- Custom 404 page
+- Next.js Actions
+
+## Screenshots
+
+Here are some screenshots of the Rentity platform:
+
+### Home page & Footer
+
+![Home page](/public/images/screenshots/1.png)
+
+![Home page](/public/images/screenshots/2.png)
+
+### Properties page as well as pagination
+
+![Properties page as well as pagination](/public/images/screenshots/4.png)
+
+### Search Properties
+
+![Search Properties](/public/images/screenshots/3.png)
+
+### Google Sign-In
+
+![Google Sign-In](/public/images/screenshots/5.png)
+
+### Property details page
+
+![Property page](/public/images/screenshots/6.png)
+
+![Property page](/public/images/screenshots/7.png)
+
+### Profile
+
+![Profile](/public/images/screenshots/8.png)
+
+### Add & Edit Property
+
+![Add & Edit Property](/public/images/screenshots/9.png)
+
+### Bookmark Property
+
+![Bookmark Property](/public/images/screenshots/10.png)
+
+## Messages between recipient and owner
+
+![Messages between recipient and owner](/public/images/screenshots/11.png)
+
+## Technologies Used
+
+Rentity is built with the following technologies:
+
+- [Next.js](https://nextjs.org/)
+- [React](https://reactjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [MongoDB](https://www.mongodb.com/)
+- [Mongoose](https://mongoosejs.com/)
+- [NextAuth.js](https://next-auth.js.org/)
+- [React Icons](https://react-icons.github.io/react-icons/)
+- [Photoswipe](https://photoswipe.com/)
+- [Cloudinary](https://cloudinary.com/)
+- [React Spinners](https://www.npmjs.com/package/react-spinners)
+- [React Toastify](https://fkhadra.github.io/react-toastify/)
+- [React Share](https://www.npmjs.com/package/react-share)
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js version 18 or higher
+- MongoDB Atlas account and a cluster. Sign up and create a cluster at [MongoDB](https://www.mongodb.com/)
+- Cloudinary account. Sign up at [Cloudinary](https://cloudinary.com/)
+- Google console account. Sign up at [Google Cloud](https://console.cloud.google.com/)
+
+### `.env` File
+
+Rename the `example.env` file to `.env` and fill in the following environment variables:
+
+- Get your MongoDB connection string from your MongoDB Atlas cluster and add it to `MONGODB_URI`.
+- Get your Google client ID and secret from your Google console account and add them to `GOOGLE_CLIENT_ID` and `GOOGLE_CLIENT_SECRET`.
+- Add a secret to `NEXTAUTH_SECRET`. You can generate it with the following command:
+  ```bash
+  openssl rand -base64 32
+  ```
+- Get your Cloudinary cloud name, API key, and API secret from your Cloudinary account and add them to `CLOUDINARY_CLOUD_NAME`, `CLOUDINARY_API_KEY`, and `CLOUDINARY_API_SECRET`.
+
+### Install Dependencies
+
+```bash
+npm install
+```
+
+### Run the Development Server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

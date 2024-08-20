@@ -2,6 +2,8 @@
 
 > A web application to help you find your next rental property.
 
+[Visit Live Demo](https://rentity-henna.vercel.app)
+
 Rentity is a comprehensive Full-Stack application built with Next.js 14, designed for discovering and managing rental properties with ease. The platform offers secure user authentication, dynamic property management, multi-image uploads, interactive map integration, and more. It leverages modern technologies such as Next.js Actions, Tailwind CSS, MongoDB, Cloudinary, and others to provide a fast, responsive, and user-friendly experience.
 
 ## Features

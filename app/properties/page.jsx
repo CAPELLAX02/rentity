@@ -4,10 +4,6 @@ import Pagination from '@/components/Pagination';
 import connectDB from '@/config/database';
 import Property from '@/models/Property';
 
-/**
- * There will be a filtering component here.
- */
-
 const PropertiesPage = async ({ searchParams: { pageSize = 6, page = 1 } }) => {
   await connectDB();
 
